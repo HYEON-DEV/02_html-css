@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        * { box-sizing: border-box; }
+
+        .container {
+            border: 2px dotted black;
+            padding: 10px;
+            /*width: 800px;*/
+            /*height: 200px;*/
+
+            .item {
+                border: 2px solid green;
+                padding: 10px;
+                margin: 5px;
+                /*width: 300px;*/
+                
+            }
+
+            &.container1 { display: flex;}
+
+            &.container2 { display: inline-flex;
+                /*&.item{ height: 150px;}*/
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1> flex </h1>
+    <div class="container container1">
+        <div class="item"> 키움은 8일 고척 SSG 랜더스전을 앞두고 외야수 이용규를 </div>
+        <div class="item"> 이용규는 7일 SSG전에서 </div>
+        <div class="item"> 오른쪽 세번째 발가락 부위에 통증이 있어서 곧바로 교체된 이용규는 병원으로 </div>
+    </div>
+    <h1> inline-flex </h1>
+    <div class="container container2">
+        <div class="item"> 키움은 8일 고척 </div>
+        <div class="item"> 이용규는 7일 SSG전에서 </div>
+        <div class="item"> 오른쪽 세번째 발가락 부위에 통증이 있어서 곧바로 </div>
+    </div>
+</body>
+
+</html>
