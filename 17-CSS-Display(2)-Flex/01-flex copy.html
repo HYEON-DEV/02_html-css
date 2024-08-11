@@ -7,26 +7,30 @@
 
     <style type="text/css">
         * { box-sizing: border-box; }
-
         .container {
             border: 2px dotted black;
             padding: 10px;
-            /*width: 800px;*/
-            /*height: 200px;*/
+            
+            &.container1 { 
+                display: flex; 
+                /*width: 800px;
+                height: 250px;*/
+            }
 
+            &.container2 { 
+                display: inline-flex;
+                
+            }
+            
             .item {
                 border: 2px solid green;
                 padding: 10px;
                 margin: 5px;
-                /*width: 300px;*/
+                width: 300px;
                 
             }
 
-            &.container1 { display: flex;}
-
-            &.container2 { display: inline-flex;
-                /*&.item{ height: 150px;}*/
-            }
+            
         }
     </style>
 </head>
@@ -34,16 +38,17 @@
 <body>
     <h1> flex </h1>
     <div class="container container1">
-        <div class="item"> 키움은 8일 고척 SSG 랜더스전을 앞두고 외야수 이용규를 </div>
-        <div class="item"> 이용규는 7일 SSG전에서 </div>
-        <div class="item"> 오른쪽 세번째 발가락 부위에 통증이 있어서 곧바로 교체된 이용규는 병원으로 </div>
+        <div class="item"> 78일. LG 최원태가 6전 7기 끝에 시즌 7승 고지에 오르는데 걸린 시간이다. 최근 경기에서 결과가 안 좋기도 했지만, 그보다 부상이 뼈아팠다. 난데없는 억측에 마음고생도 심했다. </div>
+        <div class="item"> 최근 경기에서 결과가 안 좋기도 했지만, 그보다 부상이 뼈아팠다. </div>
+        <div class="item"> 난데없는 억측에 마음고생도 심했다. </div>
     </div>
     <h1> inline-flex </h1>
     <div class="container container2">
-        <div class="item"> 키움은 8일 고척 </div>
-        <div class="item"> 이용규는 7일 SSG전에서 </div>
-        <div class="item"> 오른쪽 세번째 발가락 부위에 통증이 있어서 곧바로 </div>
+        <div class="item"> 78일. LG 최원태가 6전 7기 끝에 시즌 7승 고지에 오르는데 걸린 시간이다. 최근 경기에서 결과가 안 좋기도 했지만, 그보다 부상이 뼈아팠다. 난데없는 억측에 마음고생도 심했다. </div>
+        <div class="item"> 최근 경기에서 결과가 안 좋기도 했지만, 그보다 부상이 뼈아팠다. </div>
+        <div class="item"> 난데없는 억측에 마음고생도 심했다. </div>
     </div>
+        
 </body>
 
 </html>
