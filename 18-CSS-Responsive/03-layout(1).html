@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background-color: rgba(0,0,0,0.1);
+
+            .header {
+                background-color: rgba(0,1,0,0.1);
+                padding: 15px;
+                text-align: center;
+            }
+            .footer {
+                background-color: rgba(0,1,0,0.1);
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px;
+            }
+
+            .body {
+                display: flex;
+                flex-wrap: wrap;
+
+                .menu {
+                    background-color: rgba(0,0,0,0.1);
+                    width: 20%;
+                    text-align: center;
+                    @media only screen and (max-width: 620px){
+                        width: 100%;
+                    }
+
+                    a {
+                        background-color: rgba(0,0,0,0.1);
+                        display: block;
+                        padding: 8px;
+                        margin-top: 7px;
+                        width: 100%;
+                        color: black;
+                    }
+                }
+
+                .main {
+                    background-color: rgba(0,0,0,0.2);
+                    width: 60%;
+                    padding: 0 20px;
+                    @media only screen and (max-width: 620px){
+                        width: 100%;
+                    }
+                }
+
+                .right {
+                    background-color: rgba(0,0,0,0.1);
+                    width: 20%;
+                    padding: 15px;
+                    margin-top: 7px;
+                    text-align: center;
+                    @media only screen and (max-width: 620px) {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <h1> Hello World </h1>
+        </div>
+
+
+        <div class="body">
+
+            <div class="menu">
+                <a href="#"> Link 1 </a>
+                <a href="#"> Link 2 </a>
+                <a href="#"> Link 3 </a>
+                <a href="#"> Link 4 </a>
+            </div>
+
+            <div class="main">
+                <h2> Lorum Ipsum </h2>
+                <p> W3.CSS is a modern, responsive, mobile first CSS framework.
+
+                    W3.CSS provides equality for all browsers: Chrome. Firefox. Edge. IE. Safari. Opera.
+                    
+                    W3.CSS provides equality for all devices: Desktop. Laptop. Tablet. Mobile.
+                    
+                    W3.CSS is standard CSS only (No jQuery or JavaScript library). </p>
+            </div>
+
+            <div class="right">
+                <h2> About </h2>
+                <p> W3.CSS provides equality for all devices: Desktop. Laptop. Tablet. Mobile.
+
+                    W3.CSS is standard CSS only (No jQuery or JavaScript library). </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            &copy; copyright
+        </div>
+
+    </div>
+
+</body>
+
+</html>
