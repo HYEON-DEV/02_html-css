@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+       }
+       .wrap{ background: #00c73c;}
+       .header {
+            background-color: #00c73c;
+            display: flex;
+            width: 1000px;
+            margin: auto;
+
+            .gnb, .logo {
+                flex: none;
+            }
+
+            .logo, .gnb {
+                padding: 20px 30px;
+                background: rgba(0,0,0,0.4);
+            }
+
+            .search {
+                width: 400px;
+                padding: 14px;
+                margin-left: 10px;
+
+                display: flex;
+                
+                input, button {
+                    flex-grow: 1;
+                }
+                
+            }
+
+            .gnb {
+                margin-left: auto;
+            }
+       }
+           
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <div class="logo"> logo </div>
+            <div class="search">
+                <input type="text" title="검색" class="search_input" />
+                <button type="button" class="search_button"> 검색 </button>
+            </div>
+            <div class="gnb"> gnb </div>
+        </header>  
+    </div>  
+</body>
+
+</html>
