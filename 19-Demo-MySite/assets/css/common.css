@@ -1,0 +1,145 @@
+/* ---------------------------------------------------------------
+ * 변수 설정
+ * ------------------------------------------------------------ */
+:root {
+    --my-color-black: #000000;
+    --my-color-dark-gray: #444444;
+    --my-color-gray: #616161;
+    --my-color-gray-op: #61616177;
+    --my-color-light-gray: #eeeeee;
+    --my-color-white: #f1f1f1;
+    --my-color-black-op: #00000011;
+    --my-color-green: #0f0
+}
+
+/* ---------------------------------------------------------------
+ * 모든 태그에 대한 기본 스타일 설정
+ * ------------------------------------------------------------ */
+ * {
+    font-family: 'Noto Sans KR', sans-serif;
+    box-sizing: border-box;
+    font-size: 16px;
+ }
+
+/* ---------------------------------------------------------------
+ * 링크에 대한 기본 설정
+ * ------------------------------------------------------------ */
+a {
+    text-decoration: none;
+    color: var(--my-color-black);
+}
+
+/* ---------------------------------------------------------------
+ * 상단 영역
+ * ------------------------------------------------------------ */
+ .header {
+    /** background-color: #ff000055; /**/
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;    /* position:absolute가 되면 사이즈를 명시해야 한다 */
+    z-index: 9999;
+
+    .menu {
+        display: flex;
+        max-width: 1800px;
+        margin: auto;
+
+        li {
+            text-align: center;
+
+            @media only screen and (max-width: 992px) {
+                width: 20%;
+            }
+
+            &:last-child {
+                margin-left: auto;
+                
+                span {
+                    display: none;
+
+                    @media only screen and (max-width:992px) {
+                        display: block;
+                    }
+                }
+            }
+
+            a {
+                display: block;
+                font-size: 18px;
+                font-weight: 500;
+                padding: 20px;
+
+                &:hover {
+                    background: var(--my-color-black-op);
+                }
+
+                span {
+                    margin-left: 10px;
+                    font-size: 17px;
+
+                    @media only screen and (max-width:992px) {
+                        display: block;
+                        margin-top: 5px;
+                        margin-left: 0;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+
+    
+ }
+
+/* ---------------------------------------------------------------
+ * 하단 영역
+ * ------------------------------------------------------------ */
+ .footer {
+    /**/ background-color: #00ff0055; /**/
+
+    text-align: center;
+    padding: 50px 10px;
+    background-color: var(--my-color-black);
+
+    .to-the-top {
+        display: inline-block;
+        background-color: var(--my-color-light-gray);
+        padding: 10px 25px;
+        font-size: 18px;
+        color: var(--my-color-gray);
+        margin-bottom: 10px;
+
+        i {
+            margin-right: 10px;
+        }
+
+        &:hover{
+            background-color: var(--my-color-green);
+            color: var(--my-color-black);
+        }
+    }
+
+    .social-list {
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: var(--my-color-white);
+            display: block;
+            font-size: 35px;
+            margin: 20px 10px 40px 10px;
+
+            &:hover{
+                color: var(--my-color-green);
+            }
+        }
+    }
+
+    address {
+        color: var(--my-color-white);
+        font-size: 18px;
+    }
+ }

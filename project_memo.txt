@@ -1,0 +1,14 @@
+header
+
+sidebar   flex 아님!! 
+	커다란 컨테이너 위에거 fixed
+	padding 줘서....  what...?
+
+main
+	- main img div
+	- gallery
+	- subscribe
+	- contact, about, store
+
+footer
+
