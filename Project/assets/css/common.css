@@ -1,0 +1,246 @@
+/* ---------------------------------------------
+ * 변수 설정
+ * ------------------------------------------ */
+ :root {
+    --my-color-black: #000000;
+    --my-color-gray: #757575;
+    --my-color-gray-op: #75757555;
+    --my-color-light-gray: #d5d5d5;
+    --my-color-white: #fff;
+}
+/* ---------------------------------------------
+ * 모든 태그에 대한 기본 스타일 설정
+ * ------------------------------------------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/* ---------------------------------------------
+ * 링크에 대한 기본 설정
+ * ------------------------------------------ */
+ a {
+    text-decoration: none;
+    color: var(--my-color-black);
+}
+
+/* ---------------------------------------------
+ * 사이드바 좌측 고정 설정
+ * ------------------------------------------ */
+.container-whole {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+
+    .sidebar {
+        /*flex: 0 0 250px;*/
+        width: 250px;
+        height: 100vh;
+        .sidebar-menu {
+            height: 100%;
+            position: fixed;
+            top: 0;
+        }
+    }
+
+    .section-main {
+        flex: 1;
+        height: 10000px;
+        max-width: 1200px;
+    }
+}
+
+
+/* ---------------------------------------------
+ * 사이드바 영역
+ * ------------------------------------------ */
+.sidebar {
+    /** background-color: #ffff0055; /**/
+    color: var(--my-color-black);
+    padding-left: 15px;
+    width: 100%;
+
+    .title {    
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        letter-spacing: 4px;
+        margin: 30px 0;
+        font-weight: 550;        
+    }
+    
+    a {
+        display: block;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .category {
+        margin-top: 90px;
+
+        a {
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--my-color-gray);
+            padding: 13px 0;
+
+            &:hover {
+                color: var(--my-color-black);
+                background-color: var(--my-color-gray-op);
+            }
+        }
+    }
+
+    .side-footer {
+        margin-top: 90px;
+
+        a{
+            padding: 8px 0;
+            font-size: 15px;
+
+            &:hover {
+                background-color: var(--my-color-gray-op);
+            }
+        }
+    }
+}
+
+
+/* ---------------------------------------------
+ * 상단 영역
+ * ------------------------------------------ */
+ .header {
+    /** background-color: #ff000055; /**/
+    max-width: 950px;
+    display: flex;
+    align-items: center;
+
+    .title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        padding: 30px 15px;
+    }
+
+    .icon {
+        margin-left: auto;
+        font-size: 22px;
+        margin-right: 10px;
+        i{
+            padding: 0 5px;
+        }       
+    }
+}
+
+
+/* ---------------------------------------------
+ * 하단 영역
+ * ------------------------------------------ */
+ .footer {
+    /** background-color: #00ff0055; /**/
+
+    font-family: "Montserrat", sans-serif;
+    
+    p {
+        font-size: 12px;
+    }
+    
+
+    .content-footer {
+        display: flex;
+        padding: 80px 0;
+    }
+
+    h4 { 
+        font-weight: 400;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .contact {
+        width: 35%;
+        padding-left: 20px;
+        h4 {
+            padding-bottom: 20px;
+        }
+        p {
+            text-align: center;
+            font-size: 12px;            
+            padding-bottom: 10px;
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+
+            .input-box {
+                margin: 5px;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: 5;
+            }
+            button {
+                background-color: var(--my-color-black);
+                color: var(--my-color-white);
+            }
+        }
+    }
+
+    .about {
+        width: 35%;
+        h4 {
+            padding-bottom: 20px;
+        }
+        p {
+            text-decoration: underline;
+            font-size: 12px;
+            text-align: center;
+            padding-bottom: 15px;
+
+        }
+
+    }
+
+    .store {
+        width: 30%;
+        h4{
+            padding-bottom: 20px;
+        }
+        p{
+            display: flex;
+            font-size: 12px;
+            padding-bottom: 20px;
+            span {
+                margin-left: 8px;
+                text-wrap: nowrap;
+            }
+        }
+    }
+
+    .accept {
+        margin-top: 15px;
+
+        h4{
+            text-align: left;
+        }
+        p {
+            margin: 20px 0;
+        }
+    }
+    
+    .sns {
+        padding-top: 20px;
+    }
+
+    .bottom {
+        text-align: center;
+        padding: 35px 0;
+        background-color: var(--my-color-black);
+        color: var(--my-color-white);
+        
+        a{
+            color: var(--my-color-white);
+            &:hover {
+                color: var(--my-color-light-gray);
+            }
+        }
+        
+    }
+}
