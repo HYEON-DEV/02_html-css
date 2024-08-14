@@ -1,7 +1,33 @@
-- 우측 영역 이름 변경하기
-- 사이드바 호버 width 100% 문제
-- 푸터 하단2 호버
+레이아웃 분석
+레이아웃 영역별로 구현해야 하는 요구사항 정의
 
+구현하고자 하는 HTML 의 DOM 구조 설계
+
+레잉아웃 영역에 맞는 간결한 코드로 화면 구현
+
+설계에 누락된 부분 없이 모든 영역 구현
+
+
+
+
+- 사이드바 호버 width 100% 문제
+- 사이드바 액티브 영역  색 변하게 
+
+
+- 우측 영역 이름 변경하기
+- 푸터 하단2 호버
+- 8items 설명 글 바꾸기, 사진교체
+- 8items 여백 맞추기
+- new, sale 붙이기
+- subscribe 버튼 none 뭔지
+- subscribe 버튼 색 조정
+- 세일인거 가격색깔
+- 전체 사이드 패딩이 16이었음.....
+
+- 후기
+- 선택자와 재코딩 하고싶었는데 맘대로 되지 않았다
+분석이 부족했던 부분들이 많아 아쉬웠다
+효율적으로 다시 설계하고 싶다는 생각이 많이 든다
 
 .container-whole {
     max-width: 1200px;
@@ -18,6 +44,48 @@
         flex:1;
     }
 }
+
+
+2341
+
+
+.display {
+    
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      background-image: url("../img/jeans.jpg");
+      background-size: cover;
+      background-position: center center;     
+      /*padding: 0 16px;*/    
+      
+      .title {
+           padding: 50px 30px;
+           color: var(--my-color-white);
+
+           .text1 {
+               font-size: 64px;  
+               font-weight: 400;    
+               padding-bottom: 25px;
+           }
+           .text2 {
+               font-weight: 400;
+               font-size: 36px;
+               padding-bottom: 40px;
+           }
+           a {
+               color: var(--my-color-white);
+               background-color: var(--my-color-black);
+               padding: 15px 24px;
+               &:hover {
+                  background-color: var(--my-color-light-gray);
+                  color: var(--my-color-black);
+               }
+           }
+           
+      }
+   }
+
 
 
 
@@ -41,4 +109,5 @@ main
 	- contact, about, store
 
 footer
+
 
