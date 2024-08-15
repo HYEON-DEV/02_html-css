@@ -1,0 +1,83 @@
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 공 통
+ * -- -- -- -- -- -- -- -- -- */
+
+ * {
+    box-sizing: border-box;
+ }
+/*
+ a {
+    text-decoration: none;
+    color: #000;
+ }
+*/
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 전체 영역 사이즈   max width 1200
+ * -- -- -- -- -- -- -- -- -- */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+  
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 사이드바 사이즈, 좌측고정      ( 250px )
+ * -- -- -- -- -- -- -- -- -- */
+.sidebar {
+    position: fixed;
+    
+    height: 100%;
+    width: 250px;
+    z-index: 1000;    
+}
+
+.container-right {
+    padding-left: 250px;
+}
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 사이드바
+ * -- -- -- -- -- -- -- -- -- */
+.sidebar {
+     /**/ background-color: rgba(255, 0, 0, 0.2); /**/
+
+     .content-container {
+        display: flex;
+        flex-direction: column;
+
+        .logo {
+            height: 88px;
+        }
+        .menu {
+            height: 429px;
+        }
+        .footer-sidebar {
+            height: 120px;
+        }
+     }
+}
+
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 상 단    16  918 16
+ * -- -- -- -- -- -- -- -- -- */
+.header {
+    /**/ background-color: rgba(255, 247, 0, 0.2); /**/
+}
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 메 인   16  918 16
+ * -- -- -- -- -- -- -- -- -- */
+ .main {
+    /**/ background-color: rgba(38, 255, 0, 0.2); /**/
+}
+
+/* -- -- -- -- -- -- -- -- -- -- 
+ * 하 단
+ * -- -- -- -- -- -- -- -- -- */
+ .footer {
+    /**/ background-color: rgba(0, 238, 255, 0.2); /**/
+}
+
