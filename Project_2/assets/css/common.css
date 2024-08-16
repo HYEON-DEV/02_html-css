@@ -42,19 +42,55 @@
  * -- -- -- -- -- -- -- -- -- */
 .sidebar {
      /**/ background-color: rgba(255, 0, 0, 0.2); /**/
-
+    
      .content-container {
         display: flex;
         flex-direction: column;
 
+        /* -- -- -- -- LOGO -- -- -- -- */
         .logo {
             height: 88px;
+                       
+            .container-logo {
+               height: 100%;
+                padding: 16px;
+                display: flex;
+                flex-direction: column;
+                
+                .item-logo {
+                    font-size: 24px;
+                    margin: auto 0;
+                }
+            }
         }
+        /* -- -- -- -- menu -- -- -- -- */
         .menu {
             height: 429px;
+
+            .container-menu {
+                background-color: rgba(0,0,0,0.2);
+                height: 100%;
+                padding: 64px 0;
+                display: flex;
+                flex-direction: column;
+
+                .item-menu {
+                    flex: 1;
+                    border-bottom: 2px dotted black;
+                    &:first-child { border-top: 2px dotted black;}
+                }
+            }
         }
+        /* -- -- -- -- footer -- -- -- -- */
         .footer-sidebar {
-            height: 120px;
+            
+
+            .container-footer {
+               
+                .item-footer {
+                    height: 40px;
+                }
+            }
         }
      }
 }
